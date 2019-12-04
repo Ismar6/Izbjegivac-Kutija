@@ -1,35 +1,4 @@
-# box avoider
-
-A small example game project for my game programming course
-
-> Avoid the red boxes as long as possible to obtain the highest score.
-
-## Running the game
-
-+ Clone the game from github
-+ Execute `npm start` in your terminal in the project's directory
-+ Open http://localhost:8080 in your web browser (game is made for Chrome)
-
-## How to play
-
-The game features a title state, a play state, and a gameover state.
-
-From the title state, press SPACe to start the game.
-
-From the play state,
-
-+ Use the UP, DOWN, LEFT and RIGHT, arrow keys to move your green box around the stage.
-+ Press SPACE to pause the game
-+ Hold SHIFT to activate speed boost - but beware it is limited. If your boost reaches zero,
-you will have to wait a while before it can be used again.
-
-When paused, press SPACE to resume, or ESCAPE to quit to the title state
-
-From the gameover state, press SPACE to restart to the title state
-
-## Licensing
-
-```
+<!--
 MIT License
 
 Copyright (c) 2017 Richard Marks
@@ -51,4 +20,24 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-```
+--><!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kutijo izbjegivač</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class='game'>
+      <h1 class='game-title-text'>box avoider</h1>
+      <canvas
+        width='640'
+        height='400'
+        class='game-canvas'></canvas>
+      <h3 class='game-credits-text'>by Richard Marks (edit by me)</h3>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
